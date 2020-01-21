@@ -1,7 +1,7 @@
 # Личный проект «Типотека» [![Build status][travis-image]][travis-url]
 
 * Студент: [Дмитрий Галимов](https://up.htmlacademy.ru/nodejs/3/user/925901).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Выхрыстюк](https://htmlacademy.ru/profile/id568747).
 
 ---
 
