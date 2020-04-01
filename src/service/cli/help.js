@@ -2,7 +2,7 @@
 
 const chalk = require(`chalk`);
 
-const textMessage = `
+const TEXT_MESSAGE = `
 
   This utility runs http server and generates file with mock data.
 
@@ -20,6 +20,6 @@ const textMessage = `
 module.exports = {
   name: `--help`,
   run() {
-    console.log(chalk.cyan(textMessage));
+    console.log(chalk.cyan(TEXT_MESSAGE));
   },
 };

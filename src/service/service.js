@@ -1,7 +1,7 @@
 'use strict';
 
 const {ExitCode, USER_ARGV_INDEX} = require(`../constants.js`);
-const {Cli} = require(`./cli`);
+const {CLI} = require(`./cli`);
 
 const DEFAULT_COMMAND = `--help`;
 
@@ -11,13 +11,13 @@ if (!userCommand) {
   runDefaultCommand();
 }
 
-if (!Cli[userCommand]) {
+if (!CLI[userCommand]) {
   runDefaultCommand();
 }
 
-Cli[userCommand].run(commandArgs);
+CLI[userCommand].run(commandArgs);
 
 function runDefaultCommand() {
-  Cli[DEFAULT_COMMAND].run();
-  process.exit(ExitCode.success);
+  CLI[DEFAULT_COMMAND].run();
+  process.exit(ExitCode.SUCCESS);
 }

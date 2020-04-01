@@ -95,7 +95,7 @@ module.exports = {
 
     if (publicationsAmount > MAX_COUNT_LIMIT) {
       console.error(chalk.red(`Not more than 1000 publications allowed`));
-      process.exit(ExitCode.error);
+      process.exit(ExitCode.ERROR);
     }
 
     const publications = JSON.stringify(generatePublications(publicationsAmount));
@@ -103,7 +103,7 @@ module.exports = {
     fs.writeFile(FILE_NAME, publications, (error) => {
       if (error) {
         console.error(chalk.red(`Can't write data to file...`));
-        process.exit(ExitCode.error);
+        process.exit(ExitCode.ERROR);
       }
 
       console.log(chalk.green(`File successfully created.`));
